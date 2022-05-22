@@ -1,1 +1,4 @@
-void ledAlerter();
+
+extern int ledAlertCallCount;
+
+void ledAlerter(void);
