@@ -2,6 +2,8 @@
 
 #include "catch.hpp"
 #include "stats.h"
+#include "emailAlerter.h"
+#include "ledAlerter.h"
 
 #include <stdlib.h>
 #include <math.h>
