@@ -1,5 +1,4 @@
-
-extern int ledAlertCallCount;
+#include "ledAlerter.h"
 
 void ledAlerter()
 {
