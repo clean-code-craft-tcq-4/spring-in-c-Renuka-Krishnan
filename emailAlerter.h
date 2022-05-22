@@ -1,4 +1,4 @@
 
 extern int emailAlertCallCount;
 
-void emailAlerter();
+void emailAlerter(void);
