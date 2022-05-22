@@ -3,15 +3,14 @@
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
 
-void emailAlerter()
-{
-     emailAlertCallCount++;
-}
-void ledAlerter()
-{
-    ledAlertCallCount++;
-}
 
+/*
+Function name : check_and_alert
+Formal parameters : [in]maxThreshold
+                    [in]alerters
+                    [in]computedStats
+Function Description : This function checks if the max value in computedStats is greater than maxThreshold. If yes, call the  alerter functions.
+*/
 void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats) 
 {
      
@@ -21,6 +20,13 @@ void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stat
      alerters[1]();
  }
 }
+
+/*
+Function name : compute_statistics
+Formal parameters : [in]numberset
+                    [in]setlength
+Function Description : This function calculates the maximum, minimum and average of the given numberset.
+*/
 struct Stats compute_statistics(const float* numberset, int setlength) {
     struct Stats s;
     s.average = 0;
