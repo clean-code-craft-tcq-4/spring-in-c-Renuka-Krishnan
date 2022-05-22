@@ -9,7 +9,7 @@ void emailAlerter()
 }
 void ledAlerter()
 {
-    ledAlerterCallCount++;
+    ledAlertCallCount++;
 }
 void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats) {
   alerters[0]();
