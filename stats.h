@@ -7,7 +7,8 @@ struct Stats {
   float min;
 };
 struct Stats compute_statistics(const float* numberset, int setlength);
-
+void emailAlerter();
+void ledAlerter();
 typedef void (*alerter_funcptr)();
 void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats);
 
